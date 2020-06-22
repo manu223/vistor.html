@@ -1,1 +1,133 @@
+*{
+	margin: 0; padding: 0; box-sizing: border-box;
+}
 
+header{
+	width: 100%; height: 100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/taj-mahal-894.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+nav .menu a:hover{
+	text-decoration: underline;
+	color: crimson;
+}
+
+	
+
+nav{
+	width: 100%; height: 15vh;
+	background: rgba(0,0,0,0.2);
+	color: white; display: flex; justify-content: space-between;
+	align-items: center; text-transform: uppercase;
+}
+
+nav .logo{
+	width: 25%; text-align: center;
+}
+
+nav .logo:hover{
+	text-transform: capitalize;
+	text-decoration: underline;
+	color: green;
+}
+
+nav .menu{
+	width: 40%;
+	display: flex; justify-content: space-around;
+}
+
+nav .menu a{
+	width: 35%;
+	text-decoration: none; color: white;
+	font-weight: bold;
+}
+
+main{
+	width: 100%;
+	height: 89vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center; color: white;
+}
+
+section h1{
+	font-size: 40px; font-weight: 200; letter-spacing: 4px;
+	text-shadow: 1px 1px 2px black;
+}
+
+section h1:hover{
+	text-decoration: underline;
+	color: orange;
+}
+
+section h2{
+	margin: 30px 0 20px 0;
+	font-size: 55px;
+	font--weight: 800;
+	text-shadow: 2px 1px 5px black;
+	text-transform: uppercase;
+}
+
+section p{
+	font-size: 30px;
+	word-spacing: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
+}
+
+section p:hover{
+	text-decoration: underline;
+	text-shadow: unset;
+	color: green;
+}
+
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;
+}
+
+section .btn-one{
+	background: #fff;
+	color: #000;
+}
+
+.btn-one:hover{
+	background: #00b894;
+	color: white;
+}
+
+section .btn-two{
+	background: #00b894;
+	color: white;
+}
+
+.btn-two:hover{
+	background: #fff;
+	color: #000;
+}
+
+.change-content:after{
+	content: '';
+	animation: changetext 7s infinite linear;
+	color: #00b894;
+}
+
+@keyframes changetext{
+	0%{content:"Goa";}
+	10%{content: "Darjeeling";}
+	20%{content: "Agra";}
+	35%{content: "Delhi";}
+	60%{content: "Jaipur";}
+	80%{content: "Mumbai";}
+	100%{content: "Bikaner";}
+}
